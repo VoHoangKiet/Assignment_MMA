@@ -1,7 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, SectionList } from 'react-native';
 
-// Cấu trúc dữ liệu theo từng nhóm (sections)
 const menuItemsToDisplay = [
   {
     title: 'Appetizers',
@@ -46,7 +45,6 @@ const menuItemsToDisplay = [
   },
 ];
 
-// Component hiển thị từng mục món ăn
 const Item = ({ name, price }) => (
   <View style={menuStyles.innerContainer}>
     <Text style={menuStyles.itemText}>{name}</Text>
@@ -69,7 +67,6 @@ const MenuItems = () => {
   );
 };
 
-// Styles
 const menuStyles = StyleSheet.create({
   container: {
     flex: 1,
